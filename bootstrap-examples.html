@@ -28,8 +28,14 @@
         color: #fef9ff;
       }
       nav .btn:hover {
-    font-weight: bold;
-}
+        font-weight: bold;
+      }
+      .card-header {
+        background-color: #5b7d87;
+      }
+      .card-header .btn {
+        color: #fef9ff;
+      }
     </style>
   </head>
   <body>
@@ -43,14 +49,17 @@
       <nav>
         <a class="btn badge-pill" href="">Contact Me</a>
         <a class="btn badge-pill" href="">Projects</a>
+        <a class="btn badge-pill" href="">Testimonials</a>
       </nav>
 
       <div class="row">
+        <!-- div for picture -->
         <div class="col-lg-3 col-md">
           <img src="images/img1.jpeg" class="img-fluid" alt="" />
         </div>
 
         <div class="col-lg-9 col-md">
+          <!-- div for text -->
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
             veritatis facere sapiente repellendus reiciendis cum nulla quia odio
@@ -59,7 +68,83 @@
           </p>
         </div>
       </div>
+      <!-- End of .row div -->
+
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="portfolio01">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                My First Portfolio Piece
+              </button>
+            </h5>
+          </div>
+          <!-- end of #portfolio01 div -->
+
+          <div
+            id="collapseOne"
+            class="collapse"
+            aria-labelledby="headingOne"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              <p><a href="" target="_blank">Name of Website</a></p>
+              <figure>
+                <img src="images/img2.png" alt="Screenshot of home page" />
+              </figure>
+            </div>
+            <!-- end of .card-body div -->
+          </div>
+          <!-- end of #collapsOne div -->
+        </div>
+      </div>
+      <!-- end of .accordion div -->
+
+      <div class="accordion" id="accordionExample2">
+        <div class="card">
+          <div class="card-header" id="portfolio02">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="true"
+                aria-controls="collapseTwo"
+              >
+                My Second Portfolio Piece
+              </button>
+            </h5>
+          </div>
+          <!-- end of #portfolio01 div -->
+
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionExample2"
+          >
+            <div class="card-body">
+              <p><a href="" target="_blank">Name of Website</a></p>
+              <figure>
+                <img src="images/img2.png" alt="Screenshot of home page" />
+              </figure>
+            </div>
+            <!-- end of .card-body div -->
+          </div>
+          <!-- end of #collapsOne div -->
+        </div>
+      </div>
+      <!-- end of .accordion div -->
     </div>
+    <!-- End of .container div -->
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
